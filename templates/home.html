@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STEG</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/key-icon.png"/>
+    <style>
+      .row.heading h2 {
+        color: #fff;
+        font-size: 52.52px;
+        line-height: 95px;
+        font-weight: 400;
+        text-align: center;
+        margin: 0 0 40px;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+    ul{
+      margin:0;
+      padding:0;
+      list-style:none;
+    }
+    .heading.heading-icon {
+        display: block;
+    }
+    .padding-lg {
+      display: block;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .practice-area.padding-lg {
+        padding-bottom: 55px;
+        padding-top: 55px;
+    }
+    .practice-area .inner{ 
+         border:1px solid #999999; 
+       text-align:center; 
+       margin-bottom:28px; 
+       padding:40px 25px;
+    }
+    .our-webcoderskull .cnt-block:hover {
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.9);
+        border-radius: 20px;
+        radius: 5px;
+    }
+    .practice-area .inner h3{ 
+        color:#3c3c3c; 
+      font-size:24px; 
+      font-weight:500;
+      font-family: 'Poppins', sans-serif;
+      padding: 10px 0;
+    }
+    .practice-area .inner p{ 
+        font-size:14px; 
+      line-height:22px; 
+      font-weight:400;
+    }
+    .practice-area .inner img{
+      display:inline-block;
+    }
+    
+    
+    .our-webcoderskull{
+      border-radius: 20px;
+      background: url("http://www.webcoderskull.com/img/right-sider-banner.png") no-repeat center top / cover;
+      
+    }
+    .our-webcoderskull .cnt-block{ 
+       float:left; 
+       width:100%; 
+       background:#fff; 
+       padding:30px 20px; 
+       text-align:center; 
+       border:2px solid black;
+       margin: 0 0 28px;
+       border-radius: 20px;
+    }
+    .our-webcoderskull .cnt-block figure{
+      border-radius: 20px;
+       width:148px; 
+       height:148px; 
+       border-radius:20%; 
+       display:inline-block;
+       margin-bottom: 15px;
+    }
+    .our-webcoderskull .cnt-block img{ 
+       width:148px; 
+       height:148px; 
+       border-radius:100%; 
+    }
+    .our-webcoderskull .cnt-block h3{ 
+       color:#2a2a2a; 
+       font-size:20px; 
+       font-weight:500; 
+       padding:6px 0;
+       text-transform:uppercase;
+    }
+    .our-webcoderskull .cnt-block h3 a{
+      text-decoration:none;
+      color:#2a2a2a;
+    }
+    .our-webcoderskull .cnt-block h3 a:hover{
+      color:#337ab7;
+    }
+    .our-webcoderskull .cnt-block p{ 
+       color:#2a2a2a; 
+       font-size:13px; 
+       line-height:20px; 
+       font-weight:400;
+    }
+    .our-webcoderskull .cnt-block .follow-us{
+      margin:20px 0 0;
+      background-color: white;
+    }
+
+    .our-webcoderskull .cnt-block .follow-us li{ 
+        display:inline-block; 
+      width:auto; 
+      margin:0 5px;
+    }
+    .our-webcoderskull .cnt-block .follow-us li .fa{ 
+       font-size:24px; 
+       
+    }
+    .our-webcoderskull .cnt-block .follow-us li .fa:hover{ 
+       color:black;
+    }
+
+
+
+
+
+
+
+      body {
+        scroll: smooth;
+        
+        
+
+        
+        
+      }
+      /* Add styles for the navbar */
+      .navbar {
+        animation: fadein 1s;
+        background-color: black;
+      }
+      .navbar-brand img {
+        animation: rotate 2s infinite;
+      }
+      .text-monospace {
+        font-size: 1.5rem;
+      }
+
+      /* Add styles for the card group */
+      .card-group {
+        
+        animation: fadein 0.5s;
+      }
+      .card {
+        animation: slidein 1s;
+      }
+      .card-title {
+        font-size: 1rem;
+      }
+      .btn-group {
+        margin-top: 1.5rem;
+      }
+
+      /* Add animations */
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes slidein {
+        from {
+          transform: translateX(-50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+        
+      }
+      
+      
+        
+      
+    </style>
+  </head>
+  <body style="background: url('/static/9.JPG') no-repeat;" >
+    <!--Navbar start-->
+    <nav class="navbar navbar-expand-lg navbar-blue bg-blue"  >
+      <a class="navbar-brand ml-5" href="/">
+        <img
+          src="https://img.icons8.com/color/30/000000/data-encryption.png"
+          class="mr-2"
+        />
+        <b class="text-monospace"> Stegnography Portal</b>
+      <a class="navbar-brand ml-5" href="#our-team">
+        <img
+          
+          class="mr-1"
+        />
+        <b class="text-monospace"> OUR TEAM</b>
+      </a>
+    
+
+    </nav>
+    <!--Navbar end-->
+
+    <!--Jumbotron start-->
+
+    <!--Jumbotron end-->
+
+    <!--Body start-->
+    <div class="container" >
+      <!--Card-group start-->
+      <div class="card-group my-5 row">
+        <div class="card col-md-3 mr-3 rounded-lg bg-light" style="width: 20%">
+          <img
+            src="https://png.pngtree.com/png-clipart/20190903/original/pngtree-cartoon-file-icon-download-png-image_4439310.jpg"
+            class="mx-auto"
+            style="width: 100px; height: 100px"
+          />
+          <div class="card-body align-self-center">
+            <h4 class="card-title text-center text-monospace mb-5">
+              TEXT➡️IMAGE
+            </h4>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <a href="/text/encode" class="btn btn-outline-dark">Encode</a>
+              <a href="/text/decode" class="btn btn-outline-dark">Decode</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card col-md-3 mr-3 rounded-lg bg-blue" style="width: 20%">
+          <img
+            src="https://img.icons8.com/color/96/000000/full-image.png"
+            class="mx-auto"
+            style="width: 100px; height: 100px"
+          />
+          <div class="card-body align-self-center">
+            <h4 class="card-title text-center text-monospace mb-5">
+              IMAGE➡️IMAGE
+            </h4>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <a href="/image/encode" class="btn btn-outline-dark">Encode</a>
+              <a href="/image/decode" class="btn btn-outline-dark">Decode</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card col-md-3 mr-3 rounded-lg bg-blue" style="width: 20%">
+          <img
+            src="https://img.icons8.com/color/96/000000/high-volume.png"
+            class="mx-auto"
+            style="width: 100px; height: 100px"
+          />
+          <div class="card-body align-self-center">
+            <h4 class="card-title text-center text-monospace mb-5">
+              TEXT➡️AUDIO
+            </h4>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <a href="/audio/encode" class="btn btn-outline-dark">Encode</a>
+              <a href="/audio/decode" class="btn btn-outline-dark">Decode</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card col-md-3 rounded-lg bg-blue" style="width: 20%">
+          <img
+            src="https://img.icons8.com/color/96/000000/video.png"
+            class="mx-auto"
+            style="width: 100px; height: 100px"
+          />
+          <div class="card-body align-self-center">
+            <h4 class="card-title text-center text-monospace mb-5">
+              TEXT➡️VIDEO
+            </h4>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <a href="/video/encode" class="btn btn-outline-dark">Encode</a>
+              <a href="/video/decode" class="btn btn-outline-dark">Decode</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!--Card-group ends-->
+
+
+
+
+     
+    </div>
+    <!--Body end-->
+
+    
+    </div>
+      <section class="our-webcoderskull padding-lg" id="our-team">
+        <div class="container">
+          <div class="row heading heading-icon">
+              <h2>Mentor</h2>
+          </div>
+          <ul class="row">
+            <li class="col-12 col-lg-6 col-lg-3">
+                <div class="cnt-block equal-hight" style="height: 349px;">
+                  <figure><img src="/static/keshav.JPEG" class="img-responsive" alt=""></figure>
+                  <h3><a href="https://www.linkedin.com/in/keshavkaushikofficial" target="_blank" >Mr. Keshav Kaushik</a></h3>
+                  <b>Educator | CEH | Digital Forensics | Speaker | Editor | Author | Researcher | Freelancer</b>
+                  
+  
+                </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    
+    <section class="our-webcoderskull padding-lg" id="our-team">
+      <div class="container">
+        <div class="row heading heading-icon">
+            <h2>Our Team</h2>
+        </div>
+        <ul class="row">
+          <li class="col-12 col-md-6 col-lg-3">
+              <div class="cnt-block equal-hight" style="height: 349px;">
+                <figure><img src="/static/vikash.JPG" class="img-responsive" alt=""></figure>
+                <h3><a href="/static/vikash.JPG">VIKASH KUMAR</a></h3>
+                
+
+              </div>
+              
+          </li>
+          <li class="col-12 col-md-6 col-lg-3">
+              <div class="cnt-block equal-hight" style="height: 349px;">
+                <figure><img src="/static/arihant.JPG" class="img-responsive" alt=""></figure>
+                <h3><a href="/static/arihant.JPG">ARIHANT VARDHAN </a></h3>
+              
+                
+              </div>
+          </li>
+          <li class="col-12 col-md-6 col-lg-3">
+              <div class="cnt-block equal-hight" style="height: 349px;">
+                <figure><img src="/static/adarsh.JPG" class="img-responsive" alt=""></figure>
+                <h3><a href="/static/adarsh.JPG">ADARSH TRIPATHI </a></h3>
+               
+                
+              </div>
+           </li>
+          <li class="col-12 col-md-6 col-lg-3">
+              <div class="cnt-block equal-hight" style="height: 349px;">
+                <figure><img src="/static/vivek.JPG" class="img-responsive" alt=""></figure>
+                <h3><a href="/static/vivek.JPG">VIVEK SINGH CHANDEL </a></h3>
+                
+               
+              </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </body>
+</html>
+
+<!--Bootstrap-->
+<script
+
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+  crossorigin="anonymous"
+></script>
