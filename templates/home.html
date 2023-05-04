@@ -139,76 +139,101 @@
 
 
 
-      body {
-        scroll: smooth;
-        
-        
-
-        
-        
+    /* Default styles */
+    body {
+      scroll-behavior: smooth;
+    }
+    
+    .navbar {
+      animation: fadein 1s;
+      background-color: black;
+    }
+    
+    .navbar-brand img {
+      animation: rotate 2s infinite;
+    }
+    
+    .text-monospace {
+      font-size: 1.5rem;
+    }
+    
+    .card-group {
+      animation: fadein 0.5s;
+    }
+    
+    .card {
+      animation: slidein 1s;
+    }
+    
+    .card-title {
+      font-size: 1rem;
+    }
+    
+    .btn-group {
+      margin-top: 1.5rem;
+    }
+    
+    /* Animations */
+    @keyframes fadein {
+      from {
+        opacity: 0;
       }
-      /* Add styles for the navbar */
-      .navbar {
-        animation: fadein 1s;
-        background-color: black;
+      to {
+        opacity: 1;
       }
-      .navbar-brand img {
-        animation: rotate 2s infinite;
+    }
+    
+    @keyframes slidein {
+      from {
+        transform: translateX(-50px);
+        opacity: 0;
       }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+    /* Media queries */
+    @media (max-width: 768px) {
+      /* Adjust the font size for smaller screens */
       .text-monospace {
-        font-size: 1.5rem;
-      }
-
-      /* Add styles for the card group */
-      .card-group {
-        
-        animation: fadein 0.5s;
-      }
-      .card {
-        animation: slidein 1s;
-      }
-      .card-title {
         font-size: 1rem;
       }
+      
+      /* Adjust the margin for smaller screens */
       .btn-group {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
       }
-
-      /* Add animations */
-      @keyframes fadein {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      @keyframes slidein {
-        from {
-          transform: translateX(-50px);
-          opacity: 0;
-        }
-        to {
-          transform: translateX(0);
-          opacity: 1;
-        }
-      }
-      @keyframes rotate {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-        
+    }
+    
+    @media (max-width: 576px) {
+      /* Adjust the font size for even smaller screens */
+      .text-monospace {
+        font-size: 0.875rem;
       }
       
+      /* Adjust the margin for even smaller screens */
+      .btn-group {
+        margin-top: 0.5rem;
+      }
+    }
+    
       
         
       
     </style>
   </head>
-  <body style="background: url('/static/9.JPG') no-repeat;" >
+  <body style="background: url('https://i.ibb.co/58YrTTG/9.jpg');" >
     <!--Navbar start-->
     <nav class="navbar navbar-expand-lg navbar-blue bg-blue"  >
       <a class="navbar-brand ml-5" href="/">
@@ -326,7 +351,7 @@
           <ul class="row">
             <li class="col-12 col-lg-6 col-lg-3">
                 <div class="cnt-block equal-hight" style="height: 349px;">
-                  <figure><img src="/static/keshav.JPEG" class="img-responsive" alt=""></figure>
+                  <figure><a href="https://ibb.co/BZ8nDdn"><img src="https://i.ibb.co/wWDcH3c/keshav.jpg" alt="keshav" border="0"></a></figure>
                   <h3><a href="https://www.linkedin.com/in/keshavkaushikofficial" target="_blank" >Mr. Keshav Kaushik</a></h3>
                   <b>Educator | CEH | Digital Forensics | Speaker | Editor | Author | Researcher | Freelancer</b>
                   
@@ -345,7 +370,7 @@
         <ul class="row">
           <li class="col-12 col-md-6 col-lg-3">
               <div class="cnt-block equal-hight" style="height: 349px;">
-                <figure><img src="/static/vikash.JPG" class="img-responsive" alt=""></figure>
+                <figure><a href="https://imgbb.com/"><img src="https://i.ibb.co/ZcrNFNk/vikash.jpg" alt="vikash" border="0"></a></figure>
                 <h3><a href="/static/vikash.JPG">VIKASH KUMAR</a></h3>
                 
 
@@ -354,7 +379,7 @@
           </li>
           <li class="col-12 col-md-6 col-lg-3">
               <div class="cnt-block equal-hight" style="height: 349px;">
-                <figure><img src="/static/arihant.JPG" class="img-responsive" alt=""></figure>
+                <figure><a href="https://imgbb.com/"><img src="https://i.ibb.co/y5kmCX9/arihant.jpg" alt="arihant" border="0"></a></figure>
                 <h3><a href="/static/arihant.JPG">ARIHANT VARDHAN </a></h3>
               
                 
@@ -362,7 +387,7 @@
           </li>
           <li class="col-12 col-md-6 col-lg-3">
               <div class="cnt-block equal-hight" style="height: 349px;">
-                <figure><img src="/static/adarsh.JPG" class="img-responsive" alt=""></figure>
+                <figure><a href="https://ibb.co/MC8c4zL"><img src="https://i.ibb.co/hmXBjGv/adarsh.jpg" alt="adarsh" border="0"></a></figure>
                 <h3><a href="/static/adarsh.JPG">ADARSH TRIPATHI </a></h3>
                
                 
@@ -370,7 +395,7 @@
            </li>
           <li class="col-12 col-md-6 col-lg-3">
               <div class="cnt-block equal-hight" style="height: 349px;">
-                <figure><img src="/static/vivek.JPG" class="img-responsive" alt=""></figure>
+                <figure><a href="https://imgbb.com/"><img src="https://i.ibb.co/KXVddB2/vivek.jpg" alt="vivek" border="0"></a></figure>
                 <h3><a href="/static/vivek.JPG">VIVEK SINGH CHANDEL </a></h3>
                 
                
